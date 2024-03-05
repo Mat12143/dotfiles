@@ -1,5 +1,7 @@
 {
     "diagnostics.globals": [
-        "vim"
+        "vim",
+        "luasnip",
+        "has_words_before"
     ]
 }

@@ -23,7 +23,11 @@ return {
 					"sqls",
 					"ansiblels",
 					"gopls",
-					"intelephense",
+					"docker_compose_language_service",
+					"yamlls",
+					"html",
+					"jdtls",
+					"rust_analyzer",
 				},
 			})
 		end,
@@ -47,7 +51,13 @@ return {
 			lspconfig.ansiblels.setup({ capabilities = capabilities })
 			lspconfig.gopls.setup({ capabilities = capabilities })
 			lspconfig.dockerls.setup({ capabilities = capabilities })
+			lspconfig.phpactor.setup({ capabilities = capabilities })
 			lspconfig.intelephense.setup({ capabilities = capabilities })
+			lspconfig.docker_compose_language_service.setup({ capabilities = capabilities })
+			lspconfig.yamlls.setup({ capabilities = capabilities })
+			lspconfig.html.setup({ capabilities = capabilities })
+			lspconfig.jdtls.setup({ capabilities = capabilities })
+			lspconfig.rust_analyzer.setup({ capabilities = capabilities })
 
 			vim.keymap.set("n", "<leader>gi", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
