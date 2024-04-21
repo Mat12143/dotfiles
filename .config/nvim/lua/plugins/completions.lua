@@ -26,6 +26,10 @@ return {
                 window = {
                     completion = cmp.config.window.bordered(),
                     documentation = cmp.config.window.bordered(),
+                    border = "rounded"
+                },
+                completion = {
+                    border = "rounded"
                 },
                 mapping = {
                     ["<CR>"] = cmp.mapping.confirm({ select = true }),

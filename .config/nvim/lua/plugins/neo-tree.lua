@@ -9,6 +9,7 @@ return {
     },
     config = function()
         require("neo-tree").setup({
+            popup_border_style = "rounded",
             filesystem = {
                 filtered_items = {
                     visible = true,
