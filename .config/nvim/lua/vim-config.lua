@@ -4,6 +4,8 @@ vim.cmd("set tabstop=4")
 vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
 
+vim.o.signcolumn = "yes:1"
+
 -- Enable line number
 vim.cmd("set number")
 
