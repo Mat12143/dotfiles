@@ -1,9 +1,6 @@
 -- Autoclose () {} when writing
 return {
-	"m4xshen/autoclose.nvim",
-	config = function()
-		require("autoclose").setup({
-			close = true,
-		})
-	end,
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    config = true,
 }
