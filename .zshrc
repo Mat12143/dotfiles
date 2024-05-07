@@ -48,3 +48,4 @@ esac
 # pnpm end
 #
 alias open="xdg-open"
+alias neofetch="echo STOP using neofetch, use FASTFETCH instead"
