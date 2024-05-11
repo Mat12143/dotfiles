@@ -7,6 +7,8 @@ bindkey -e
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/matteo/.zshrc'
 
+export PATH="/home/matteo/.local/bin:$PATH"
+
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
@@ -36,6 +38,7 @@ zinit light-mode for \
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-syntax-highlighting
+
 ### End of Zinit's installer chunk
 eval "$(zoxide init --cmd cd zsh)"
 
