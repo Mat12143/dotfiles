@@ -16,7 +16,6 @@ return {
                 "go",
                 "php",
                 "html",
-                "prisma",
                 "java",
                 "rust",
             },
