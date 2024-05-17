@@ -5,6 +5,8 @@ $character
 # Inserts a blank line between shell prompts
 add_newline = true
 
+scan_timeout = 10
+
 [git_branch]
 always_show_remote = true
 format = "[on](light fg:#fdfff1) [$branch](fg:#fd971f)"
