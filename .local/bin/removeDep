@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+if [[ $(pacman -Qqtd) ]]; then
+    echo "Some orphans pkgs found..."
+    sudo pacman -R $(pacman -Qqtd)
+else
+    echo "Any orphans pkgs found"
+fi
