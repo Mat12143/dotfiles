@@ -31,6 +31,9 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
+# Path
+export PATH="$HOME/.local/bin:$PATH"
+
 # Init starship
 eval "$(starship init zsh)"
 
