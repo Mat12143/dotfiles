@@ -1,4 +1,21 @@
 -- Language server
+
+local servers = {
+    "lua_ls",
+    "html",
+    "pyright",
+    "tsserver",
+    "jsonls",
+    "svelte",
+    "cssls",
+    "tailwindcss",
+    "dockerls",
+    "gopls",
+    "docker_compose_language_service",
+    "yamlls",
+    "html",
+}
+
 return {
     {
         "williamboman/mason.nvim",
@@ -10,25 +27,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = {
-                    "lua_ls",
-                    "html",
-                    "pylsp",
-                    "tsserver",
-                    "jsonls",
-                    "svelte",
-                    "cssls",
-                    "tailwindcss",
-                    "dockerls",
-                    "sqls",
-                    "ansiblels",
-                    "gopls",
-                    "docker_compose_language_service",
-                    "yamlls",
-                    "html",
-                    "jdtls",
-                    "rust_analyzer",
-                },
+                ensure_installed = servers
             })
         end,
     },
@@ -39,25 +38,12 @@ return {
 
             local lspconfig = require("lspconfig")
 
-            lspconfig.lua_ls.setup({ capabilities = capabilities })
-            lspconfig.svelte.setup({ capabilities = capabilities })
-            lspconfig.tsserver.setup({ capabilities = capabilities })
-            lspconfig.html.setup({ capabilities = capabilities })
-            lspconfig.pylsp.setup({ capabilities = capabilities })
-            lspconfig.jsonls.setup({ capabilities = capabilities })
-            lspconfig.cssls.setup({ capabilities = capabilities })
-            lspconfig.tailwindcss.setup({ capabilities = capabilities })
-            lspconfig.sqls.setup({ capabilities = capabilities })
-            lspconfig.ansiblels.setup({ capabilities = capabilities })
-            lspconfig.gopls.setup({ capabilities = capabilities })
-            lspconfig.dockerls.setup({ capabilities = capabilities })
-            lspconfig.phpactor.setup({ capabilities = capabilities })
-            lspconfig.intelephense.setup({ capabilities = capabilities })
-            lspconfig.docker_compose_language_service.setup({ capabilities = capabilities })
-            lspconfig.yamlls.setup({ capabilities = capabilities })
-            lspconfig.html.setup({ capabilities = capabilities })
-            lspconfig.jdtls.setup({ capabilities = capabilities })
-            lspconfig.rust_analyzer.setup({ capabilities = capabilities })
+            -- Loop over all the lsp servers to call setup()
+            for _, lsp in ipairs(servers) do
+                lspconfig[lsp].setup {
+                    capabilities = capabilities
+                }
+            end
 
             vim.keymap.set("n", "<leader>gi", vim.lsp.buf.hover, {})
             vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
