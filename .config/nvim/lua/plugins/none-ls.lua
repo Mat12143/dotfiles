@@ -12,6 +12,8 @@ return {
                 -- Python files formatting
                 null_ls.builtins.formatting.isort,
                 null_ls.builtins.formatting.black,
+                -- Go Imports
+                null_ls.builtins.formatting.goimports
             },
             on_attach = function(client, bufnr)
                 if client.supports_method("textDocument/formatting") then

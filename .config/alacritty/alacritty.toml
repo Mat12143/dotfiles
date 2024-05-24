@@ -1,0 +1,26 @@
+# Import theme
+import = [
+    "~/.config/alacritty/themes/themes/monokai.toml"
+]
+
+# Fonts setup
+[font.normal]
+family="JetBrainsMono Nerd Font Mono"
+style="Regular"
+
+[font.bold]
+family="JetBrainsMono Nerd Font Mono"
+style="Bold"
+
+[window]
+decorations="None"
+startup_mode="Maximized"
+opacity=0.8
+padding={x=5,y=5}
+
+[selection]
+save_to_clipboard=true
+
+[cursor.style]
+blinking="On"
+shape="Block"
