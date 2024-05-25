@@ -8,6 +8,7 @@ Used software:
 - Alacritty
 
 ## Look
+![](https://github.com/Mat12143/dotfiles/blob/main/images/look.png?raw=true)
 
 ## Background
-
+![](https://github.com/Mat12143/dotfiles/blob/main/images/background.png?raw=true)
