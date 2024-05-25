@@ -16,7 +16,7 @@ style="Bold"
 decorations="None"
 startup_mode="Maximized"
 opacity=0.8
-padding={x=5,y=5}
+padding={x=8,y=8}
 
 [selection]
 save_to_clipboard=true
