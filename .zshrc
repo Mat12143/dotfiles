@@ -34,6 +34,11 @@ setopt hist_find_no_dups
 # Path
 export PATH="$HOME/.local/bin:$PATH"
 
+# Aliases
+alias ssh="TERM=xterm-256color $(which ssh)"
+alias open="xdg-open"
+alias ls="ls -lh"
+
 # Init starship
 eval "$(starship init zsh)"
 

@@ -17,6 +17,7 @@ decorations="None"
 startup_mode="Maximized"
 opacity=0.8
 padding={x=8,y=8}
+# dynamic_padding=true
 
 [selection]
 save_to_clipboard=true

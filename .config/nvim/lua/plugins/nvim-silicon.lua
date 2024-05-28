@@ -5,9 +5,9 @@ return {
     config = function()
         require("silicon").setup({
             font = "JetBrainsMono Nerd Font=34",
-            	theme = "Monokai Extended",
+            theme = "Monokai Extended",
             no_rounded_corners = false,
-            output = function ()
+            output = function()
                 return "~/Pictures/Code/" .. os.date("!%Y-%m-%dT%H-%M-%S") .. "_code.png";
             end
         })
