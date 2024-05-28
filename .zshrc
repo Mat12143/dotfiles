@@ -35,7 +35,7 @@ setopt hist_find_no_dups
 export PATH="$HOME/.local/bin:$PATH"
 
 # Aliases
-alias ssh="TERM=xterm-256color $(which ssh)"
+alias ssh="TERM=xterm-256color ssh"
 alias open="xdg-open"
 alias ls="ls -lh"
 
