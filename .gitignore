@@ -1,0 +1,16 @@
+*
+
+!*/
+!/.gitignore
+
+!/.config/tmux/**
+!/.config/nvim/**
+!/.config/alacritty/**
+!/.config/fastfetch/**
+!/.config/hypr/**
+!/.config/waybar/**
+!/.config/wlogout/**
+!/.config/wofi/**
+
+!/.local/bin/**
+!/README.md

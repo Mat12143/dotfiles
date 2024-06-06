@@ -1,0 +1,87 @@
+{
+    "margin": "5 0 0 3",
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "network",
+        "pulseaudio",
+        "backlight",
+        "battery",
+        "custom/wlogout"
+    ],
+    //***************************
+    //*  Modules configuration  *
+    //***************************
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": []
+        }
+    },
+    "clock": {
+        "timezone": "Europe/Rome",
+        "locale": "it_IT.UTF_8",
+        "format": "{:%a, %d %B %H:%M}"
+    },
+    "network": {
+        "interface": "wlp0s20f3",
+        "format": "   {signalStrength}% ",
+        "format-disconnected": "  Offline",
+        "on-click": "~/.config/waybar/scripts/wifiToggle.sh",
+        "min-length": 5
+    },
+    "pulseaudio": {
+        "scroll-step": 10, // %, can be a float
+        "format": "{volume}% {icon}  {format_source}",
+        "format-source": "",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "headset": "",
+            "default": [
+                " ",
+                " ",
+                " "
+            ]
+        },
+        "on-click": "pavucontrol",
+        "min-length": 10
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{percent}% 󰃞",
+        "min-length": 5
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-icons": [
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ]
+    },
+    "custom/wlogout": {
+        "format": "Logout",
+        "on-click": "wlogout"
+    }
+}

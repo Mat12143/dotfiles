@@ -1,0 +1,90 @@
+* {
+    border: none;
+    border-radius: 0;
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "JetBrains Mono Nerd Font";
+    font-size: 14px;
+    min-height: 20px;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+#workspaces {
+    margin-right: 8px;
+    border-radius: 10px;
+    transition: none;
+    background: #222327;
+}
+
+#workspaces button {
+    transition: none;
+    color: #7c818c;
+    background: transparent;
+    padding: 5px;
+    font-size: 18px;
+}
+
+#workspaces button.active {
+    border-radius: 10px;
+    transition: none;
+    color: #ffffff;
+    background: #FF6077;
+}
+
+#workspaces button:hover {
+    transition: none;
+    box-shadow: inherit;
+    text-shadow: inherit;
+    border-radius: inherit;
+    color: #383c4a;
+    background: #222327;
+}
+
+
+#clock {
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px 10px 10px 10px;
+    transition: none;
+    color: #ffffff;
+    background: #222327;
+}
+
+#backlight,
+#battery,
+#network,
+#custom-wlogout,
+#pulseaudio {
+    margin-right: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px;
+    transition: none;
+    color: #ffffff;
+    background: #222327;
+}
+
+#battery.charging,
+#battery.full {
+    color: #ffffff;
+    background-color: #9ED072;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #FF6077;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #55393D;
+        color: #000000;
+    }
+}
