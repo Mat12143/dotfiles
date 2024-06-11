@@ -15,6 +15,7 @@ local servers = {
     "yamlls",
     "html",
     "vimls",
+    "templ"
 }
 
 return {

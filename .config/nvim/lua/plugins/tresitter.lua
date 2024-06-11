@@ -14,7 +14,8 @@ return {
                 "xml",
                 "go",
                 "html",
-                "svelte"
+                "svelte",
+                "templ"
             },
             highlight = { enable = true },
             indent = { enable = true },
