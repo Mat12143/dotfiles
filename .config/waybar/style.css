@@ -1,21 +1,14 @@
 * {
     border: none;
     border-radius: 0;
-    /* `otf-font-awesome` is required to be installed for icons */
     font-family: "JetBrains Mono Nerd Font";
     font-size: 14px;
-    min-height: 20px;
+    min-height: 22px;
 }
 
 window#waybar {
-    background: transparent;
-}
-
-#workspaces {
-    margin-right: 8px;
     border-radius: 10px;
-    transition: none;
-    background: #222327;
+    background-color: #222327;
 }
 
 #workspaces button {
@@ -23,6 +16,8 @@ window#waybar {
     color: #7c818c;
     background: transparent;
     padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
     font-size: 18px;
 }
 
@@ -37,33 +32,28 @@ window#waybar {
     transition: none;
     box-shadow: inherit;
     text-shadow: inherit;
-    border-radius: inherit;
-    color: #383c4a;
-    background: #222327;
-}
-
-
-#clock {
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 10px 10px 10px 10px;
-    transition: none;
-    color: #ffffff;
-    background: #222327;
-}
-
-#backlight,
-#battery,
-#network,
-#custom-wlogout,
-#pulseaudio {
-    margin-right: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
     border-radius: 10px;
-    transition: none;
     color: #ffffff;
-    background: #222327;
+    background: #FF6077;
+}
+
+#clock,
+#battery,
+#window,
+#network,
+#pulseaudio {
+    margin-right: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+}
+
+#clock:hover,
+#battery:hover,
+#network:hover,
+#pulseaudio:hover {
+    background-color: #FF6077;
+    border-radius: 10px;
 }
 
 #battery.charging,
