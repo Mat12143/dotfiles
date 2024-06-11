@@ -33,6 +33,7 @@ setopt hist_find_no_dups
 
 # Path
 export PATH="$HOME/.local/bin:$PATH"
+export EDITOR="nvim"
 
 # Aliases
 alias ssh="TERM=xterm-256color ssh"

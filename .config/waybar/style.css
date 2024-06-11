@@ -60,6 +60,7 @@ window#waybar {
 #battery.full {
     color: #ffffff;
     background-color: #9ED072;
+    border-radius: 10px;
 }
 
 #battery.critical:not(.charging) {
