@@ -18,3 +18,4 @@ require("material-landscape2").setup {
 xplr.config.general.search.algorithm = "Fuzzy"
 xplr.config.general.show_hidden = true
 xplr.config.node_types.directory.meta.icon = ""
+xplr.config.general.prompt.format = "❯ "
