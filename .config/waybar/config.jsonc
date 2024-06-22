@@ -7,6 +7,7 @@
         "hyprland/window"
     ],
     "modules-right": [
+        "tray",
         "network",
         "pulseaudio",
         "battery",
@@ -17,35 +18,29 @@
     //***************************
     "hyprland/workspaces": {
         "disable-scroll": true,
-        "format" : " {id}  {icon} ",
-        "format-icons" : {
-            "1" : "",
-            "2" : "󰈹",
-            "3" : "",
-            "4" : ""
-        },
+        "format": " {id} ",
         "persistent-workspaces": {
             "1": [],
             "2": [],
             "3": [],
-            "4": []
+            "4" : []
         }
     },
     "clock": {
         "timezone": "Europe/Rome",
         "locale": "it_IT.UTF_8",
         "format": "  {:%H:%M} ",
-        "tooltip-format" : "{:%A %d %B %Y %T}",
-        "interval" : 1
+        "tooltip-format": "{:%A %d %B %Y %T}",
+        "interval": 1
     },
     "network": {
         "interface": "wlp0s20f3",
-        "format": "  {signalStrength}%", 
+        "format": "  {essid}",
         "format-disconnected": "  Offline",
         "on-click": "~/.config/waybar/scripts/wifiToggle.sh",
         "min-length": 5,
-        "tooltip-format-wifi" : "{essid} | {ipaddr}",
-        "interval" : 10
+        "tooltip-format-wifi": "{ipaddr}",
+        "interval": 10
     },
     "pulseaudio": {
         "scroll-step": 10, // %, can be a float

@@ -13,7 +13,7 @@ window#waybar {
 
 #workspaces button {
     transition: none;
-    color: #7c818c;
+    color: #EBDBB2;
     background: transparent;
     padding: 5px;
     padding-left: 8px;
@@ -24,8 +24,8 @@ window#waybar {
 #workspaces button.active {
     border-radius: 10px;
     transition: none;
-    color: #ffffff;
-    background: #FF6077;
+    color: #EBDBB2;
+    background-color: #FB4934;
 }
 
 #workspaces button:hover {
@@ -33,39 +33,41 @@ window#waybar {
     box-shadow: inherit;
     text-shadow: inherit;
     border-radius: 10px;
-    color: #ffffff;
-    background: #FF6077;
+    background-color: #FB4934;
+    color: #EBDBB2;
 }
 
 #clock,
 #battery,
 #window,
 #network,
+#tray,
 #pulseaudio {
     margin-right: 3px;
     padding-left: 10px;
     padding-right: 10px;
-    color: #ffffff;
+    color: #EBDBB2;
 }
 
 #clock:hover,
 #battery:hover,
 #network:hover,
+#tray:hover,
 #pulseaudio:hover {
-    background-color: #FF6077;
+    background-color: #FB4934;
     border-radius: 10px;
 }
 
 #battery.charging,
 #battery.full {
-    color: #ffffff;
-    background-color: #9ED072;
+    color: #EBDBB2;
+    background-color: #B8BB26;
     border-radius: 10px;
 }
 
 #battery.critical:not(.charging) {
     background-color: #FF6077;
-    color: #ffffff;
+    color: #EBDBB2;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;

@@ -7,19 +7,17 @@
 #window {
     margin: 0px;
     border: none;
-    border-color: #FF6077;
     border-radius: 10px;
-    background-color: #181819;
-    color: #7F8490;
+    background-color: #222327;
+    color: #EBDBB2;
 }
 
 #input {
     margin: 25px;
     background-color: #2C2E34;
-    color: #7F8490;
+    color: #EBDBB2;
     border-radius: 10px;
     border: none;
-    border-color: #181819;
 }
 
 #scroll {
@@ -31,7 +29,7 @@
 }
 
 #entry:selected {
-    background-color: #FF6077;
+    background-color: #FB4934;
     border-radius: 10px;
     border: none;
     outline: none;

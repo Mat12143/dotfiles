@@ -1,12 +1,12 @@
 -- Neovim theme
 return {
-    "loctvl842/monokai-pro.nvim",
+    "ellisonleao/gruvbox.nvim",
     priority = 1000,
     config = function()
-        require("monokai-pro").setup({
-            background_clear = { "float_win", "neotree", "telescope" },
-            transparent_background = true
+        require("gruvbox").setup({
+            transparent_mode = true,
         })
-        vim.cmd.colorscheme("monokai-pro")
-    end,
+        vim.o.background = "dark"
+        vim.cmd("colorscheme gruvbox")
+    end
 }

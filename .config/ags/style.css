@@ -1,0 +1,51 @@
+@define-color accent #FC5D7C;
+@define-color background #30323A;
+
+window.bar {
+    background-color: @background;
+    font-family: JetBrainsMono Nerd Font;
+}
+
+button {
+    min-width: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: transparent;
+}
+
+button:active {
+    background-color: @theme_selected_bg_color;
+}
+
+button:hover {
+    border-bottom: 3px solid @theme_fg_color;
+}
+
+label {
+    font-weight: bold;
+}
+
+.workspaces button.focused {
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: red;
+    color: white;
+}
+
+.battery {
+    color: white;
+}
+
+.box {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.client-title {
+    color: yellow;
+}
+
+levelbar block,
+highlight {
+    min-height: 10px;
+}

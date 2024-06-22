@@ -1,6 +1,6 @@
 # Import theme
 import = [
-    "~/.config/alacritty/themes/themes/monokai.toml"
+    "~/.config/alacritty/theme.toml"
 ]
 
 # Fonts setup

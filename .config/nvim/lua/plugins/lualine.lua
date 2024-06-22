@@ -7,10 +7,7 @@ return {
             options = {
                 component_separators = "|",
                 section_separators = { left = "", right = "" },
-                disabled_filetypes = {
-                    statusline = { "neo-tree" },
-                },
-                theme = "monokai-pro",
+                theme = "gruvbox",
             },
             sections = {
                 lualine_a = { "mode" },
