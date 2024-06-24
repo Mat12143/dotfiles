@@ -1,6 +1,6 @@
 return {
     "stevearc/oil.nvim",
-    config = function()
+config = function()
         require("oil").setup({
 
             view_options = {

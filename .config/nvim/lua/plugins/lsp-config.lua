@@ -14,6 +14,7 @@ local servers = {
     "docker_compose_language_service",
     "yamlls",
     "html",
+    "nil_ls"
 }
 
 return {

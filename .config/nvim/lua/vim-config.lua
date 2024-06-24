@@ -21,3 +21,5 @@ vim.opt.termguicolors = true
 
 -- Set lualine to use all the width
 vim.o.laststatus = 3
+
+vim.keymap.set("n", "<leader>gn", "<CMD>:%!alejandra -qq<CR>")
