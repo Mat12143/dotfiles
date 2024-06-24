@@ -34,6 +34,7 @@ setopt hist_find_no_dups
 # Path
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR="nvim"
+export HYPRSHOT_DIR="~/Pictures/Screenshots"
 
 # Aliases
 alias ssh="TERM=xterm-256color ssh"
