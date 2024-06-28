@@ -1,5 +1,3 @@
-#!/bin/bash
-
 mute=$(pactl get-source-mute 1)
 
 if [ "$mute" == "Mute: yes" ]; then

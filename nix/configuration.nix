@@ -21,8 +21,10 @@
       enable = true;
       efiSupport = true;
       device = "nodev";
+      configurationLimit = 50;
     };
   };
+
 
   networking.hostName = "nixos"; # Define your hostname.
 
@@ -103,12 +105,16 @@
      cargo
      alacritty
      hyprland
+     nodejs_22
 
      starship
      tmux
      waybar
      wlogout
      wofi
+     hypridle
+     hyprlock
+     swww
   ];
 
   fonts.packages = with pkgs; [
