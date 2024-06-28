@@ -76,6 +76,7 @@
     isNormalUser = true;
     description = "Matteo";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
+    shell = pkgs.zsh;
   };
 
   # Install firefox.
@@ -83,6 +84,8 @@
 
   # Install steam
   programs.steam.enable = true; 
+
+  programs.zsh.enable = true;
 
   # Install docker
   virtualisation.docker.enable = true;
@@ -100,6 +103,12 @@
      cargo
      alacritty
      hyprland
+
+     starship
+     tmux
+     waybar
+     wlogout
+     wofi
   ];
 
   fonts.packages = with pkgs; [
