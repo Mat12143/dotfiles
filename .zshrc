@@ -33,6 +33,7 @@ setopt hist_find_no_dups
 
 # Path
 export PATH="$HOME/.local/bin:$PATH"
+export GOBIN="$HOME/.local/bin"
 export EDITOR="nvim"
 export HYPRSHOT_DIR="~/Pictures/Screenshots"
 
@@ -43,6 +44,8 @@ alias ls="ls -lh"
 
 # Init starship
 eval "$(starship init zsh)"
+
+eval "$(thefuck --alias)"
 
 eval "$(zoxide init --cmd cd zsh)"
 

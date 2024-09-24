@@ -7,7 +7,7 @@ return {
             options = {
                 component_separators = "|",
                 section_separators = { left = "", right = "" },
-                theme = "gruvbox",
+                theme = "monokai-pro",
             },
             sections = {
                 lualine_a = { "mode" },

@@ -1,2 +1,4 @@
-.config/alacritty/*
 nix/*
+.git
+README.md
+.gitignore

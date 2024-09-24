@@ -4,7 +4,7 @@ local servers = {
     "lua_ls",
     "html",
     "pyright",
-    "tsserver",
+    "ts_ls",
     "jsonls",
     "svelte",
     "cssls",
@@ -14,7 +14,7 @@ local servers = {
     "docker_compose_language_service",
     "yamlls",
     "html",
-    "nil_ls"
+    "clangd",
 }
 
 return {
