@@ -1,0 +1,3 @@
+.local/bin/*
+!.local/bin/removeDep
+!.local/bin/tmuxs
