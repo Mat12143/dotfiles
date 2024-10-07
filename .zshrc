@@ -41,6 +41,7 @@ export HYPRSHOT_DIR="~/Pictures/Screenshots"
 alias ssh="TERM=xterm-256color ssh"
 alias open="xdg-open"
 alias ls="ls -lh"
+alias copy="xclip -selection clipboard"
 
 # Init starship
 eval "$(starship init zsh)"
