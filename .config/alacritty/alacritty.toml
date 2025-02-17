@@ -1,27 +1,13 @@
-# Import theme
+[general]
 import = [
-    "~/.config/alacritty/theme.toml"
+    "./theme.toml"
 ]
 
-# Fonts setup
-[font.normal]
-family="JetBrainsMono Nerd Font Mono"
-style="Regular"
-
-[font.bold]
-family="JetBrainsMono Nerd Font Mono"
-style="Bold"
+[env]
+WINIT_X11_SCALE_FACTOR = "1.25"
 
 [window]
-decorations="None"
-startup_mode="Maximized"
-opacity=0.8
-padding={x=8,y=8}
-# dynamic_padding=true
-
-[selection]
-save_to_clipboard=true
-
-[cursor.style]
-blinking="On"
-shape="Block"
+decorations = "None"
+startup_mode = "Maximized"
+padding = { x = 10, y = 10 }
+dynamic_padding = true

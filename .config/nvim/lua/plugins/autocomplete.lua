@@ -1,40 +1,29 @@
--- Auto complete and snippets
 return {
     {
         "hrsh7th/cmp-nvim-lsp",
     },
     {
         "L3MON4D3/LuaSnip",
-        dependencies = { "saadparwaiz1/cmp_luasnip", "rafamadriz/friendly-snippets" },
+        dependencies = {
+            "saadparwaiz1/cmp_luasnip",
+            "rafamadriz/friendly-snippets",
+        },
     },
     {
         "hrsh7th/nvim-cmp",
         config = function()
-            -- Add ( after function
-            local cmp_autopairs = require("nvim-autopairs.completion.cmp")
             local cmp = require("cmp")
-            cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
-
             require("luasnip.loaders.from_vscode").lazy_load()
-            require("luasnip.loaders.from_vscode").lazy_load({ paths = { "./snippets/cpp.json" } })
 
             cmp.setup({
                 snippet = {
                     expand = function(args)
-                        local luasnip = require("luasnip")
-                        if not luasnip then
-                            return
-                        end
                         require("luasnip").lsp_expand(args.body)
                     end,
                 },
                 window = {
                     completion = cmp.config.window.bordered(),
                     documentation = cmp.config.window.bordered(),
-                    border = "rounded",
-                },
-                completion = {
-                    border = "rounded",
                 },
                 mapping = {
                     ["<CR>"] = cmp.mapping.confirm({ select = true }),
@@ -61,8 +50,8 @@ return {
                     end, { "i", "s" }),
                 },
                 sources = cmp.config.sources({
-                    { name = "luasnip" },
                     { name = "nvim_lsp" },
+                    { name = "luasnip" }, -- For luasnip users.
                 }, {
                     { name = "buffer" },
                 }),

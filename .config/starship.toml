@@ -9,21 +9,21 @@ scan_timeout = 10
 
 [git_branch]
 always_show_remote = true
-format = "[on](light fg:#fdfff1) [$branch](fg:#fd971f)"
+format = "[on](light fg:#dddecf) [$branch](fg:#e69875)"
 
 
 [git_status]
 format       = "$ahead$behind$staged"
-ahead        = "[⇡](bold fg:#c0c1b5)"
-behind       = "[⇣](bold fg:#919288)"
-staged       = "[++](bold fg:#6e7066)"
+ahead        = "[⇡](bold fg:#caccbe)"
+behind       = "[⇣](bold fg:#caccbe)"
+staged       = "[++](bold fg:#caccbe)"
 
 [directory]
 truncation_length = 1 
 truncate_to_repo = false
-format = "[$path](bold fg:#f92672)"
+format = "[$path](bold fg:#e67e80)"
 
 [character]
 format = "$symbol"
-success_symbol = "[❯](bold #a6e22e)"
-error_symbol = "[❯](bold #66d9ef)"
+success_symbol = "[❯](bold #b2c98f)"
+error_symbol = "[❯](bold #e67e80)"

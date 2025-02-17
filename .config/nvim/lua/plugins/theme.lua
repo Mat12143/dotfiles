@@ -1,16 +1,11 @@
--- Neovim theme
 return {
-    "loctvl842/monokai-pro.nvim",
-    priority = 1000,
+    "comfysage/evergarden",
+    priority = 1000, -- Colorscheme plugin is loaded first before any other plugins
+    opts = {
+        transparent_background = true,
+        variant = "hard",
+    },
     config = function()
-        require("monokai-pro").setup({
-            transparent_background = true,
-            background_clear = {
-                "telescope",
-                "float_win"
-            }
-        })
-        vim.o.background = "dark"
-        vim.cmd("colorscheme monokai-pro")
-    end
+        vim.cmd("colorscheme evergarden")
+    end,
 }

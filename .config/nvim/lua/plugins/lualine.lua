@@ -1,4 +1,3 @@
--- Status bar customization
 return {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -7,15 +6,15 @@ return {
             options = {
                 component_separators = "|",
                 section_separators = { left = "", right = "" },
-                theme = "monokai-pro",
+                theme = "auto",
             },
             sections = {
                 lualine_a = { "mode" },
-                lualine_b = { "branch" },
-                lualine_c = { "filename" },
-                lualine_x = { "diagnostics" },
-                lualine_y = { "filetype" },
-                lualine_z = { "" },
+                lualine_b = { "filename" },
+                lualine_c = { "" },
+                lualine_x = { "" },
+                lualine_y = { "diagnostics" },
+                lualine_z = { "branch" },
             },
         })
     end,
