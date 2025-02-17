@@ -12,14 +12,16 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = lsp_list
+                ensure_installed = lsp_list,
             })
-        end
+        end,
     },
     {
         "neovim/nvim-lspconfig",
+        dependencies = { "saghen/blink.cmp" },
         config = function()
-            local capabilities = require("cmp_nvim_lsp").default_capabilities()
+            local capabilities = require("blink.cmp").get_lsp_capabilities()
+
             require("mason-lspconfig").setup_handlers({
                 function(server_name)
                     require("lspconfig")[server_name].setup({
